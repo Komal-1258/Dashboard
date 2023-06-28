@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup_Page</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dosis:wght@300&display=swap');
+    h1{
+        text-align: center;
+        font-size:2;
+        margin:-7px -10px ;
+        padding-bottom: 5%;
+    }
+    body {
+        background: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        font-family: 'Dosis', sans-serif;
+        
+    }
+    label{
+        border-radius: 5px;
+        box-shadow: inset  4px #ffcccb;
+
+
+    }
+    form {
+        border: 3px solid #f1f1f1;
+        margin-left: 25%;
+        margin-right: 25%;
+        justify-content: center;
+        text-align: center;
+       
+        padding: 4% 6%;
+        width: auto;
+        height:auto ;
+
+    }
+
+  
+    button{
+        color:#fff;
+        background-color: rgb(10, 36, 113);
+        cursor: pointer;
+        transition:.8s all ease;
+        
+    }
+
+    button:hover{
+        background-color: aliceblue;
+        color: black;
+        
+    }
+   
+    label {
+        position: relative;
+        font-size: 1em;
+        }
+    form a {
+       
+        color: rgb(18, 10, 105);
+        }
+
+    a:hover{
+        text-decoration: none;
+        color:rgb(238, 9, 31) ;
+        
+
+    }
+
+  p {
+        padding-top:2px;
+        }
+
+</style>
+<body>
+    <h1>SIGNUP</h1>
+    <form action="#" method="post">
+        {% csrf_token %}
+        <label for="First_Name"><b>FIRST NAME:</b></label>
+        <input type="text" placeholder="First_Name" name="FirstName" required>
+        <br><br>
+        <label for="Last_Name"><b>LAST NAME:</b></label>
+        <input type="text" placeholder="Last_Name" name="LastName"required >
+        <br><br>
+        <label for="DOB"><b>DATE OF BIRTH:</b></label>
+        <input type="date"  placeholder="DateOfBirth" name="DOB" required>
+        <br><br>
+        <label for="Gender"><b>GENDER:</b></label>
+        
+        <input type="radio" id="Male" value="male" name="Gender">Male
+        
+        <input type="radio" id="Female" value="female"name="Gender">Female
+        
+        <input type="radio"id="Other"value="other"name="Gender">Other
+        <br><br>
+        <label for="Address"><b>ADDRESS:</b></label>
+        <textarea rows="4" cols="50"placeholder="address" name="Address"></textarea>
+        <br><br>
+        <label for="State"><b>STATE:</b></label>
+        <select name="State" id="">
+            <option selected disabled>--Select State--</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chattisgarh">Chattisgarh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>    
+            <option value="Kerala">Kerala</option>    
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharastra">Maharastra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Uttrakhand">Uttrakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+        <br><br>
+        <label for="Email"><b>EMAIL:</b></label>
+        <input type="email" placeholder="Email" name="Email" required>
+        <br><br>
+        <label for="Password"><b>PASSWORD:</b></label>
+        <input type="password" placeholder="Enter Password" name="Password" required><br><br>
+        <button>Signup</button>
+        <p>Already Have A Account <a href="http://localhost:8000/login/#">Login</a></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dosis:wght@300&display=swap');
+   
+    body {
+        background: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Dosis', sans-serif;
+     
+    }
+    
+
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        padding-bottom: 5%;
+    }
+
+    form {
+        border: 3px solid #f1f1f1;
+        margin-left: 35%;
+        margin-right: 35%;
+        justify-content: center;
+        text-align: center;
+        margin-top: -2%;
+        padding: 4% 6%;
+        width: auto;
+        height:auto ;
+
+    }
+    button{
+        color:#fff;
+        background-color: rgb(10, 36, 113);
+        cursor: pointer;
+        transition:.8s all ease;
+        
+    }
+
+    button:hover{
+        background-color: aliceblue;
+        color: black;
+        
+    }
+   
+    label {
+        position: relative;
+        font-size: 1em;
+        }
+    form a {
+       
+        color: rgb(18, 10, 105);
+        }
+
+    a:hover{
+        text-decoration: none;
+        color:rgb(238, 9, 31) ;
+        
+
+    }
+
+  p {
+        padding-top:2px;
+        }
+
+
+    
+</style>
+
+<body>
+    <h1>LOGIN</h1>
+    <form action="#" method="post">
+       
+        <label for="Email"><b>EMAIL:</b></label>
+        <input type="email" placeholder="Email" name="Email" required>
+        <br><br>
+        <label for="Password"><b>PASSWORD:</b></label>
+        <input type="password" placeholder="Enter Password" name="Password" required><br><br>
+        <button>Login</button>
+        <a href="#">Forgot password?</a><br><br>
+        <p>Don't Have A Account <a href="http://localhost:8000/signup/#">Register</a></p>
+    </form>
+</body>
+
+</html>
